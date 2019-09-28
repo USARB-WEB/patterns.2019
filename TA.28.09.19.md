@@ -8,3 +8,5 @@ De invatat POO:
 - polimorfism
 - metode statice
 - clase abstracte
+
+http://www.php.su/learnphp/phpoo/
