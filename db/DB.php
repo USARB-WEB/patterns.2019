@@ -1,7 +1,7 @@
 <?php
 class DB{
-    public function connect() {
-        return "Connected to DB";
+    public function connect($dbName) {
+        return "Connected to DB: " . $dbName;
     }
 
     public function select() {

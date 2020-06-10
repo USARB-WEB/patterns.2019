@@ -3,7 +3,7 @@ require_once "DB.php";
 echo "Hello";
 echo "<br>";
 $dbInstance = new DB();
-echo $dbInstance->connect();
+echo $dbInstance->connect("db1");
 echo "<br>";
 echo $dbInstance->insert();
 echo "<br>";
@@ -19,4 +19,6 @@ echo "<br>";
 echo $dbInstance->delete();
 echo "<br>";
 echo $dbInstance->update();
+$dbInstance2 = new DB();
+echo $dbInstance2->connect("db2");
 ?>
