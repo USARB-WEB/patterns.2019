@@ -1,7 +1,10 @@
 <?php
 class DB{
+    private $dbName = null;
+
     public function connect($dbName) {
-        return "Connected to DB: " . $dbName;
+        $this->dbName = $dbName;
+        return "Connected to DB: " . $this->dbName;
     }
 
     public function select() {
