@@ -23,6 +23,11 @@ echo $dbInstance->update();
 $dbInstance2 = DB::getInstance();
 echo $dbInstance2->connect("db2");
 echo "<br>";
+$dbInstance3 = new DB();
+echo $dbInstance3->connect("db3");
+echo "<br>";
+
 var_dump($dbInstance);
 var_dump($dbInstance2);
+var_dump($dbInstance3);
 ?>

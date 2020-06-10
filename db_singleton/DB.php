@@ -4,16 +4,18 @@ class DB{
     private static $instance = null;
     private $dbName = null;
 
-    public function connect($dbName) {
-        $this->dbName = $dbName;
-        return "Connected to DB: " . $this->dbName;
-    }
+    private function __construct(){}
 
     public static function getInstance(){
         if(self::$instance === null) {
             self::$instance = new self();
         }
         return self::$instance;
+    }
+
+    public function connect($dbName) {
+        $this->dbName = $dbName;
+        return "Connected to DB: " . $this->dbName;
     }
 
     public function select() {
