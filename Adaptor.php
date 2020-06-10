@@ -9,14 +9,17 @@ class Aritmetica {
 
 class Adaptor
 {
-
+    public function suma($x, $y)
+    {
+        $a = new Aritmetica();
+        $object = [
+            'x' => $x,
+            'y' => $y
+        ];
+        return $a->suma($object);
+    }
 }
 
 
-
-$a = new Aritmetica();
-$object = [
-    'x' => 2,
-    'y' => 4
-];
-echo $a->suma($object);
+$a = new Adaptor();
+echo $a->suma(2, 4);

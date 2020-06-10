@@ -36,12 +36,6 @@ class Facade
 }
 
 
-
-
-
-
-
-
 $f = new SuperFormula();
 $x = 2;
 $y = 3;
