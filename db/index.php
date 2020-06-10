@@ -21,7 +21,7 @@ echo "<br>";
 echo $dbInstance->update();
 $dbInstance2 = new DB();
 echo $dbInstance2->connect("db2");
-echo "<br>";
+
 var_dump($dbInstance);
 var_dump($dbInstance2);
 ?>
